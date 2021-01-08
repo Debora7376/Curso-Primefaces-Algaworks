@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Pr5\Documents\workdev\Workspace-Primefaces\Curso-Primefaces-Algaworks\PedidoVenda"/>
 			<item value="C:\Users\Pr5\Documents\workdev\Workspace-Primefaces\PedidoVenda"/>
 		</list>
 		<list key="projectNameTemplate">
