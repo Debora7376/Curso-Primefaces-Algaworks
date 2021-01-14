@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 	
 	<properties>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
+<!-- 		<failOnMissingWebXml>false</failOnMissingWebXml> -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
