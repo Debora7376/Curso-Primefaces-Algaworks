@@ -8,17 +8,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </h:head>
 <h:body>
-	<h:form id="frm">
+
+	<h:form>
+		<p:calendar value="#{formatacaoBean.dataInformada}" pattern="dd/MM/yyyy" />
+		<p:commandButton value="Enviar" action="#{formatacaoBean.enviar}" update="@form" />
 		
-		<p:button value="Exibir" onclick="meuDialogo.show(); return false;" />
-		<p:button value="Ocultar" onclick="meuDialogo.hide(); return false;" />
-		
-		<p:dialog header="Meu diálogo" widgetVar="meuDialogo" draggable="false"
-				resizable="false" modal="false" minimizable="true" maximizable="true"
-				showEffect="shake" hideEffect="explode">
-			Conteúdo do diálogo
-		</p:dialog>
-		
+		<br/>
+		<h:outputText value="#{formatacaoBean.dataFormatada}" />
 	</h:form>
 
 </h:body>

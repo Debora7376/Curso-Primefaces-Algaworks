@@ -8,17 +8,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </h:head>
 <h:body>
-	<h:form id="frm">
-		
-		<p:button value="Exibir" onclick="meuDialogo.show(); return false;" />
-		<p:button value="Ocultar" onclick="meuDialogo.hide(); return false;" />
-		
-		<p:dialog header="Meu diálogo" widgetVar="meuDialogo" draggable="false"
-				resizable="false" modal="false" minimizable="true" maximizable="true"
-				showEffect="shake" hideEffect="explode">
-			Conteúdo do diálogo
-		</p:dialog>
-		
+
+	<h:form>
+		<p:inputText value="#{envioMensagemBean.texto}" />
+		<p:commandButton value="Enviar mensagem" action="#{envioMensagemBean.enviarMensagem}" />
 	</h:form>
 
 </h:body>
